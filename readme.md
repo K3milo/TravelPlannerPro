@@ -17,4 +17,4 @@ OpenTripMap (simulada para países específicos)
 
 Enlace del proyecto
 
-https://github.com/K3milo/TravelPlannerPro
+https://k3milo.github.io/TravelPlannerPro/
