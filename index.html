@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPlannerPro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
+</head>
+<body>
+    <div class="contenedorDeInicio"> <!-- contenedor de la inicio de sesion-->
+        <h1>Bienvenido a TravelPlannerPro</h1>
+        <p>Tu asistente de planificación de viajes personalizado</p>
+        <!-- formulario de inicio de sesion -->
+        <form id="formDeSesion">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+            <label for="pais">Pais de residencia:</label>
+            <input type="text" id="pais" name="pais" placeholder="Ingresa tu pais" required>
+
+            <button type="submit">Ingresar</button>
+            
+        </form>
+
+        <p id="mensaje"></p>
+    </div>
+    <script src="js/storage.js"></script>
+</body>
+</html>

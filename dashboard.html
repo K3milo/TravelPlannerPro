@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelPlannerPro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
+</head>
+<body>
+    <!-- Pantalla de Carga Inicial -->
+    <div id="pantalla-carga" class="pantalla-carga">
+       <div class="loader-contenedor">
+          <div class="spinner-recto"></div>
+          <p class="texto-carga">Iniciando sesión...</p>
+        </div>
+    </div>
+
+
+
+    <div class="menuUsuario">
+        <button id="btnModoOscuro" class="btn-oscuro">🌙 Modo Oscuro</button>
+        <button id="cerrarSesion">Cerrar sesión</button>
+    </div>
+
+    <div class="pagina">
+        <h1>PANEL DE VIAJES</h1>
+        <p id="bienvenida"></p>
+
+        <div class="resumen">
+            <div class="card">Países consolidados: <span id="totalPaises">0</span></div>
+            <div class="card">Destinos favoritos: <span id="totalDestinos">0</span></div>
+            <div class="card">Atracciones favoritas: <span id="totalAtracciones">0</span></div>
+            <div class="card">Historial de búsquedas: <span id="totalBusquedas">0</span></div>
+        </div>
+        <br>
+
+        <div class="buscador">
+            <input type="text" id="buscadorpais" placeholder="Ingresa el nombre del país">
+            <button id="botonBuscar">Buscar</button>
+        </div>
+
+        <div class="infoPais">
+            <h2>Información del país</h2>
+            <p id="detallesDelPais"></p>
+        </div>
+
+        <div class="clima">
+            <h3>Clima Actual</h3>
+            <p>Temperatura: <span id="temperatura">--</span></p>
+            <p>Humedad: <span id="humedad">--</span></p>
+            <p>Viento: <span id="viento">--</span></p>
+            <p>Estado: <span id="estado">--</span></p>
+        </div>
+
+        <div class="moneda">
+            <h3>Conversor de Monedas</h3>
+            <input type="number" id="cantidad" placeholder="Cantidad">
+            <select id="monedaOrigen">
+                <option value="COP">COP</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button id="btnConvertir">Convertir</button>
+            <p id="resultadoConversion"></p>
+        </div>
+
+        <div class="atracciones">
+            <h2>Atracciones turísticas</h2>
+            <ul id="detallesDeAtracciones"></ul>
+        </div>
+
+        <div class="favoritos">
+            <h2>Destinos favoritos</h2>
+            <div id="listafavoritos"></div>
+        </div>
+
+        <div class="historial">
+            <h2>Historial de búsquedas</h2>
+            <ul id="listahistorial"></ul>
+        </div>
+    </div>
+    <script src="js/weather.js"></script>
+    <script src="js/tourism.js"></script>
+    <script src="js/currency.js"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

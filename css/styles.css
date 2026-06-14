@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #2f2f30, #2f2f30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos del inicio de sesion*/
+.contenedorDeInicio {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.contenedorDeInicio h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contenedorDeInicio p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contenedorDeInicio label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+.contenedorDeInicio input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contenedorDeInicio button {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    background-color: #45BEF7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedorDeInicio button:hover {
+    background-color: #e7f33e;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
