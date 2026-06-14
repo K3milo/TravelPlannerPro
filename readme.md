@@ -1,6 +1,3 @@
-TravelPlannerPro
-Descripción
-
 TravelPlannerPro es una aplicación web diseñada para facilitar la planificación de viajes. Permite consultar información de diferentes países, visualizar el clima, conocer atracciones turísticas y realizar conversiones de moneda de manera sencilla e interactiva.
 
 Funcionalidades
